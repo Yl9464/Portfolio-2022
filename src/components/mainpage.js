@@ -2,6 +2,7 @@ import About from "./about";
 import Header from "./header";
 import ProfilePic from "../images/profilePic.png"
 import HarleyPic from "../images/harley.png"
+
 function Mainpage() {
     return (
         <div>
