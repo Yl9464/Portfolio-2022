@@ -10,15 +10,14 @@ text-align: center;
 }
 
 .pictures{
-  display: flex;
+  display: inline-block;
   flex-direction: column;
-  float: left;
   width: 45%;
 
 }
 .profilePic, .harleyPic{
-  height: 50%;
-  width: 50%;
+  height: 45%;
+  width: 45%;
   float: left;
   border-radius: 20%;
   margin-bottom: 30px;
@@ -26,21 +25,17 @@ text-align: center;
 }
 
 .pageContent{
-  float: left;
-  width: 65%;
+  display: inline;
+  width: 75%;
   position: absolute;
-  display:inline;
-  padding-right: 90px;
  }
 
-.aboutMe, .resume, .skills, .contactMe{
-margin-right: 40px;
-}
+
 h4{
   text-decoration: underline;
 }
  h4, p {
-  padding: 10px;
+  padding-bottom: 10px;
  }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {

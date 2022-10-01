@@ -7,7 +7,7 @@ function Header() {
                     <ul class="navbar-nav">
 
                         <li class="nav-item active">
-                            <a class="nav-link" src="about"> About</a>
+                            <a class="nav-link" href="about"> About</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="skills">Skills<span class="sr-only"></span></a>
