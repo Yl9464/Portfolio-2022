@@ -4,13 +4,13 @@ body {
 }
 
 .header_section {
-margin: 40px 50px 0 500px;
+margin: 40px 50px 0 450px;
 padding-bottom: 50px;
 text-align: center;
 }
 
 .pictures{
-  display: inline-block;
+  display: block;
   flex-direction: column;
   width: 45%;
 
@@ -21,13 +21,14 @@ text-align: center;
   float: left;
   border-radius: 20%;
   margin-bottom: 30px;
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 .pageContent{
   display: inline;
   width: 75%;
   position: absolute;
+  padding: 30px;
  }
 
 
