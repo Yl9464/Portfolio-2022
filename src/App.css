@@ -41,10 +41,11 @@ body {
 width: 275px;
 height: 275px;
 border-radius: 20%;
-margin-top: 30px;
 }
 
-
+.harleyPic{
+  margin-top: 110px;
+}
 
 .pageContent{
   border-color: rgb(43, 226, 43);
