@@ -2,7 +2,7 @@
 
 function Header() {
     return (
-        <div class="header_section">
+        <div  className="header_section">
                 <nav id="menubar" class="navbar navbar-expand-lg custom_nav-container ">
                     <ul class="navbar-nav">
 
