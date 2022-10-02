@@ -3,9 +3,9 @@ import HarleyPic from "../images/harley.png"
 
 function Pictures() {
     return (
-        <div>
-            <img className="profilePic" src={ProfilePic} alt="profile pic"></img>
-            <img className="harleyPic" src={HarleyPic} alt="Harley dog"></img>
+        <div className="pictures">
+           <img className="profilePic" src={ProfilePic} alt="profile pic"></img>
+            <img className="harleyPic" src={HarleyPic} alt="Harley dog"></img> 
         </div>
     )
 }

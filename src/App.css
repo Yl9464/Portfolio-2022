@@ -1,35 +1,57 @@
 body {
     background: #eee;
     padding: 0 16px;
+
 }
 
 .header_section {
-margin: 40px 50px 0 450px;
-padding-bottom: 50px;
-text-align: center;
-}
-
-.pictures{
-  display: block;
+  position: relative;
+  padding-top: 5px; 
+  padding-bottom: 5px;;
+  display: flex;
+  font-weight: bold;
   flex-direction: column;
-  width: 45%;
+  align-items: center;
+  background-color:rgba(183, 192, 192, 0.536);
+}
 
+.flex-container{
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  border-color: rgb(19, 21, 19);
+    border-style: solid;
 }
-.profilePic, .harleyPic{
-  height: 45%;
-  width: 45%;
-  float: left;
-  border-radius: 20%;
-  margin-bottom: 30px;
-  margin-left: 50px;
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  width:fit-content;
+  border-color: blueviolet;
+  border-style: solid;
+  margin-right: 50px;
+ 
 }
+
+.profilePic,
+.harleyPic{
+width: 275px;
+height: 275px;
+border-radius: 20%;
+margin-top: 30px;
+}
+
+
 
 .pageContent{
-  display: inline;
-  width: 75%;
-  position: absolute;
-  padding: 30px;
- }
+  border-color: rgb(43, 226, 43);
+  border-style: solid;
+  flex-grow: 1;
+  width: 70%;
+}
 
 
 h4{
