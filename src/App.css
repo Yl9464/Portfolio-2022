@@ -1,35 +1,75 @@
 body {
     background: #eee;
     padding: 0 16px;
+    height: 100%;
+      overflow: hidden;
+
+}
+.mainpage{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
 }
 
 .header_section {
-margin: 40px 50px 0 500px;
-padding-bottom: 50px;
-text-align: center;
-}
-
-.pictures{
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba(183, 192, 192, 0.536);
+  display: flex;
   flex-direction: column;
-  width: 45%;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
 
+  }
+
+.flex-container{
+  padding: 0 40px 0 30px;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  /* border-color: rgb(19, 21, 19);
+    border-style: solid; */
 }
-.profilePic, .harleyPic{
-  height: 45%;
-  width: 45%;
-  float: left;
-  border-radius: 20%;
-  margin-bottom: 30px;
-  margin-left: 70px;
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  width:fit-content;
+  /* border-color: blueviolet;
+  border-style: solid; */
+  margin-right: 50px;
+ 
+}
+
+.profilePic,
+.harleyPic{
+width: 275px;
+height: 275px;
+border-radius: 20%;
+}
+
+.harleyPic{
+  margin-top: 110px;
 }
 
 .pageContent{
-  display: inline;
-  width: 75%;
-  position: absolute;
- }
-
+  border-color: rgb(43, 226, 43);
+  border-style: solid;
+  flex-grow: 1;
+  width: 70%;
+}
+.skills{
+  border-color: rgb(43, 134, 226);
+  border-style: solid;
+}
 
 h4{
   text-decoration: underline;
