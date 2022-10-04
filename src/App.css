@@ -3,9 +3,8 @@ body {
     padding: 0 16px;
     height: 100%;
       overflow: hidden;
-
 }
-.mainpage{
+.mainpage, .contactPage{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -13,7 +12,9 @@ body {
     right: 0;
     overflow: auto;
 }
-
+.contactPage{
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
+}
 .header_section {
   position: absolute;
   top: 0;
@@ -28,6 +29,15 @@ body {
 
   }
 
+    .contactForm{
+      padding: 0 40px 0 30px;
+      margin-top: 90px;
+      display: flex;
+      width: fit-content;
+      margin-top: 10rem;
+      margin-left: 40rem;
+
+    }
 .flex-container{
   padding: 0 40px 0 30px;
   margin-top: 90px;
@@ -61,19 +71,23 @@ border-radius: 20%;
 }
 
 .pageContent{
-  border-color: rgb(43, 226, 43);
-  border-style: solid;
+  /* border-color: rgb(43, 226, 43);
+  border-style: solid; */
   flex-grow: 1;
   width: 70%;
 }
-.skills{
-  border-color: rgb(43, 134, 226);
-  border-style: solid;
-}
-
+/* .skills{
+   border-color: rgb(43, 134, 226);
+  border-style: solid;  */
+  
 h4{
   text-decoration: underline;
+
 }
+.resumeImage{
+ max-width: 100%;
+}
+
  h4, p {
   padding-bottom: 10px;
  }
