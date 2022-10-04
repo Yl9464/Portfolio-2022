@@ -14,14 +14,14 @@ function Contact() {
             }, (error) => {
                 console.log(error.text);
             });
-    };
-
+    }
+        
     return (
         <div className="contactPage">
             <Header />
            
-            <form className="contactForm">
-                <div class="form-row" ref={form} onSubmit={sendEmail}>
+            <form className="contactForm" ref={form} onSubmit={sendEmail}>
+                <div class="form-row">
                     <div class="form-group col-md-6">
                         <label>Name</label>
                         <input type="text" name="user_name" />
