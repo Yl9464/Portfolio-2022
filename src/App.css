@@ -4,7 +4,7 @@ body {
     height: 100%;
       overflow: hidden;
 }
-.mainpage{
+.mainpage, .contactPage{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -27,6 +27,15 @@ body {
 
   }
 
+    .contactForm{
+      padding: 0 40px 0 30px;
+      margin-top: 90px;
+      display: flex;
+      width: fit-content;
+      margin-top: 10rem;
+      margin-left: 40rem;
+
+    }
 .flex-container{
   padding: 0 40px 0 30px;
   margin-top: 90px;
@@ -68,11 +77,6 @@ border-radius: 20%;
 /* .skills{
    border-color: rgb(43, 134, 226);
   border-style: solid;  */
-
-.contactPage {
-    background-color: royalblue;
-    color: silver;
-  }
   
 h4{
   text-decoration: underline;
@@ -80,6 +84,7 @@ h4{
  h4, p {
   padding-bottom: 10px;
  }
+
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding: 7px 25px;
