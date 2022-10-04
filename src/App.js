@@ -1,11 +1,22 @@
 import './App.css';
 import Mainpage from "./components/mainpage"
+import Contact from './components/contact';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
 
 function App() {
   return (
-    <div className="App">
-      <Mainpage />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Mainpage />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+      </div>
+
+    </BrowserRouter>
+
   );
 }
 
