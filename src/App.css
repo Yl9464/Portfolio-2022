@@ -12,7 +12,9 @@ body {
     right: 0;
     overflow: auto;
 }
-
+.contactPage{
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
+}
 .header_section {
   position: absolute;
   top: 0;
@@ -80,11 +82,15 @@ border-radius: 20%;
   
 h4{
   text-decoration: underline;
+
 }
+.resumeImage{
+ max-width: 100%;
+}
+
  h4, p {
   padding-bottom: 10px;
  }
-
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding: 7px 25px;
