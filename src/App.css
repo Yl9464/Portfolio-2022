@@ -4,7 +4,7 @@ body {
     height: 100%;
       overflow: hidden;
 }
-.mainpage{
+.mainpage, .contactPage{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -67,12 +67,8 @@ border-radius: 20%;
 }
 /* .skills{
    border-color: rgb(43, 134, 226);
-  border-style: solid;  */
-
-.contactPage {
-    background-color: royalblue;
-    color: silver;
-  }
+  border-style: solid; 
+ } */
   
 h4{
   text-decoration: underline;
