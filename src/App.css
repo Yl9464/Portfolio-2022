@@ -18,6 +18,23 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
 }
 
+
+/* header layout*/
+.header-section{
+  background-color: rgb(182, 182, 182);
+}
+
+.navbar-brand{
+  margin-left: 30px;
+}
+/* 
+nav bar buttons */
+nav .navbar-nav li a {
+  color: rgb(31, 53, 82);
+  margin-right: 5px;
+  font-weight: bold;
+
+}
 /*Start home page */
 .homePage-flex-container {
   padding: 0 40px 0 30px;
@@ -30,37 +47,6 @@ body {
     border-style: solid; */
 }
 
-/* header layout*/
-.header_section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color:rgba(183, 192, 192, 0.536);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-}
-/* navbar  */
-    .custom_nav-container,
-    .navbar-nav,
-    .nav-item,
-    .nav-link {
-      padding: 7px 25px;
-      margin: 0 10px;
-      color: #141a1a;
-      text-align: center;
-      border-radius: 5px;
-    }
-
-.contentPage {
-    flex-grow: 1;
-    width: 70%;
-    /* border-color: rgb(43, 226, 43);
-    border-style: solid; */
-        }
 /* images */
 .pictures {
   display: flex;
@@ -83,6 +69,14 @@ body {
 .harleyPic {
   margin-top: 110px;
 }
+
+
+.contentPage {
+  flex-grow: 1;
+  width: 70%;
+  /* border-color: rgb(43, 226, 43);
+    border-style: solid; */
+}
 /* end home page */
 
 /* contact page */
@@ -94,7 +88,6 @@ body {
   margin-top: 10rem;
   margin-left: 40rem;
 }
-
 
 /* general html elements */
 h4{
