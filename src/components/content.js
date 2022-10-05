@@ -1,5 +1,4 @@
-import Skills from "./skills"
-
+import Skills from './skills'
 function Content() {
     return (
         <div className="contentSection">
@@ -22,10 +21,8 @@ function Content() {
                     <li> Donec efficitur lorem tristique dolor posuere, vel semper neque tempor.</li>
                     <li> Proin vitae justo bibendum felis faucibus lobortis non eget odio.</li> 
                </ol>
-            </div>
-            <div className="skills">
-                <Skills />
-            </div>
+            </div> 
+            <Skills />
         </div>
     )
 }

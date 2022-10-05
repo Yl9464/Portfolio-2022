@@ -45,12 +45,13 @@ body {
 
 .aboutMe, .funFacts{
 margin-top: 2rem;
-}
-.skills{
-  display: flex;
-  flex-wrap: wrap;
 
 }
+
+.funFacts{
+  margin-bottom: 9rem;
+}
+
 /* contact page */
 .contactPage {
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png")

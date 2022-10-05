@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 function Skills() {
     return (
-        
+      <div className='Skills'>
     <Container fluid>
       <Row>
         <Col> <FontAwesomeIcon icon="fa-brands fa-js fa-5x" size="5x" fa-fw /> </Col>
@@ -15,7 +15,9 @@ function Skills() {
         <Col> <FontAwesomeIcon icon="fa-brands fa-html5" size="5x" fa-fw /></Col>
         <Col> <FontAwesomeIcon icon="fa-brands fa-react" size="5x" fa-fw /> </Col>
       </Row>
-    </Container>
+        </Container>
+      </div>
+
 )
 }
 export default Skills
