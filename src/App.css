@@ -1,40 +1,42 @@
 body {
-    background: #eee;
-    padding: 0 16px;
-    height: 100%;
-      overflow: hidden;
+  background: #eee;
+  padding: 0 16px;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* page positionings */
-.mainpage, .contactPage{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
+.homePage,
+.contactPage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* overflow: auto; */
 }
-.contactPage{
+
+.contactPage {
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
 }
 
 
 /* header layout*/
-.header-section{
+.header-section {
   background-color: rgb(182, 182, 182);
 }
 
-.navbar-brand{
+.navbar-brand {
   margin-left: 30px;
 }
-/* 
-nav bar buttons */
+
 nav .navbar-nav li a {
   color: rgb(31, 53, 82);
   margin-right: 5px;
   font-weight: bold;
 
 }
+
 /*Start home page */
 .homePage-flex-container {
   padding: 0 40px 0 30px;
@@ -77,10 +79,11 @@ nav .navbar-nav li a {
   /* border-color: rgb(43, 226, 43);
     border-style: solid; */
 }
+
 /* end home page */
 
 /* contact page */
-.contactForm{
+.contactForm {
   padding: 0 40px 0 30px;
   margin-top: 90px;
   display: flex;
@@ -90,16 +93,11 @@ nav .navbar-nav li a {
 }
 
 /* general html elements */
-h4{
+h4 {
   text-decoration: underline;
   margin-top: 15px;
 }
+
 p {
   padding-bottom: 10px;
- }
-
-
-
-
-
-
+}
