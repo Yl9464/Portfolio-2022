@@ -4,6 +4,8 @@ body {
     height: 100%;
       overflow: hidden;
 }
+
+/* page positionings */
 .mainpage, .contactPage{
     position: absolute;
     top: 0;
@@ -15,6 +17,20 @@ body {
 .contactPage{
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
 }
+
+/*Start home page */
+.homePage-flex-container {
+  padding: 0 40px 0 30px;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  /* border-color: rgb(19, 21, 19);
+    border-style: solid; */
+}
+
+/* header layout*/
 .header_section {
   position: absolute;
   top: 0;
@@ -26,126 +42,71 @@ body {
   align-items: center;
   text-align: center;
   padding: 10px;
-
-  }
-
-    .contactForm{
-      padding: 0 40px 0 30px;
-      margin-top: 90px;
-      display: flex;
-      width: fit-content;
-      margin-top: 10rem;
-      margin-left: 40rem;
-
-    }
-.flex-container{
-  padding: 0 40px 0 30px;
-  margin-top: 90px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  height: 100%;
-  /* border-color: rgb(19, 21, 19);
-    border-style: solid; */
 }
+/* navbar  */
+    .custom_nav-container,
+    .navbar-nav,
+    .nav-item,
+    .nav-link {
+      padding: 7px 25px;
+      margin: 0 10px;
+      color: #141a1a;
+      text-align: center;
+      border-radius: 5px;
+    }
 
+.contentPage {
+    flex-grow: 1;
+    width: 70%;
+    /* border-color: rgb(43, 226, 43);
+    border-style: solid; */
+        }
+/* images */
 .pictures {
   display: flex;
   flex-direction: column;
-  width:fit-content;
+  width: fit-content;
+  margin-right: 50px;
+  margin-top: 15px;
   /* border-color: blueviolet;
   border-style: solid; */
-  margin-right: 50px;
- 
+
 }
 
 .profilePic,
-.harleyPic{
-width: 275px;
-height: 275px;
-border-radius: 20%;
+.harleyPic {
+  width: 275px;
+  height: 275px;
+  border-radius: 20%;
 }
 
-.harleyPic{
+.harleyPic {
   margin-top: 110px;
 }
+/* end home page */
 
-.pageContent{
-  /* border-color: rgb(43, 226, 43);
-  border-style: solid; */
-  flex-grow: 1;
-  width: 70%;
+/* contact page */
+.contactForm{
+  padding: 0 40px 0 30px;
+  margin-top: 90px;
+  display: flex;
+  width: fit-content;
+  margin-top: 10rem;
+  margin-left: 40rem;
 }
-/* .skills{
-   border-color: rgb(43, 134, 226);
-  border-style: solid;  */
-  
+
+
+/* general html elements */
 h4{
   text-decoration: underline;
-
+  margin-top: 15px;
 }
-.resumeImage{
- max-width: 100%;
-}
-
- h4, p {
+p {
   padding-bottom: 10px;
  }
 
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
-  padding: 7px 25px;
-  margin: 0 10px;
-  color: #141a1a;
-  text-align: center;
-  border-radius: 5px;
-}
 
-.nav-item.active .nav-link,
-.custom_nav-container.navbar-expand-lg 
-.navbar-nav .nav-item:hover .nav-link {
-  background-color: #f0b016;
-  color: #ffffff;
-}
 
-.btn,
-.btn:focus {
-  outline: none !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
 
-.custom_nav-container .nav_search-btn {
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-}
 
-.navbar .navbar-brand {
-  display: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.navbar .navbar-brand img {
-  width: 90px;
-  margin-right: 5px;
-}
-
-.custom_nav-container {
-  z-index: 99999;
-  padding: 5px 0;
-}
-
-.custom_nav-container .navbar-toggler {
-  outline: none;
-}
-
-.custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-size: 45px;
-}
 

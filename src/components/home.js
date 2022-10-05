@@ -6,7 +6,7 @@ function Mainpage() {
     return (
         <div className="mainpage">
             <Header />
-            <div className="flex-container">
+            <div className="homePage-flex-container">
             <Pictures />        
             <Content />
             </div>

@@ -5,7 +5,7 @@ function Header() {
         <div className="header_section">
             <nav id="menubar" class="navbar navbar-expand-lg custom_nav-container ">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="about">
                             <Link exact to="/">Home</Link>
                         </a>
