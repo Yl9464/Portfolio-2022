@@ -1,88 +1,61 @@
 body {
-  background: #eee;
-  padding: 0 16px;
-  height: 100%;
-  overflow: hidden;
+  background: DCD7C9;
+  color: #3F4E4F;
 }
-
-/* page positionings */
-.homePage,
-.contactPage {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  /* overflow: auto; */
-}
-
-.contactPage {
-  background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
-}
-
 
 /* header layout*/
 .header-section {
-  background-color: rgb(182, 182, 182);
+  background-color: #2C3639;
+  z-index: 1;
+}
+.nameBrand,
+.headerLinks,
+.navLinks {
+  /* font-weight: bolder; */
+  color: #DCD7C9;
 }
 
-.navbar-brand {
-  margin-left: 30px;
-}
-
-nav .navbar-nav li a {
-  color: rgb(31, 53, 82);
-  margin-right: 5px;
+.contactLink{
+  color: #FECD70;
   font-weight: bold;
+}
+/* end header */
 
+/*Home page */
+.homePage-flex-container {
+  display: flex;
+  height: 100%;
+  padding: 0 40px 0 30px;  
+  margin-top: 20px;
 }
 
-/*Start home page */
-.homePage-flex-container {
-  padding: 0 40px 0 30px;
-  margin-top: 90px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  height: 100%;
-  /* border-color: rgb(19, 21, 19);
-    border-style: solid; */
+.contentSection, .pictures{
+  margin-top: 20px;
 }
 
 /* images */
 .pictures {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
   margin-right: 50px;
-  margin-top: 15px;
-  /* border-color: blueviolet;
-  border-style: solid; */
-
 }
 
-.profilePic,
-.harleyPic {
-  width: 275px;
-  height: 275px;
-  border-radius: 20%;
+.profilePic {
+  width: 17rem;
+  height: 17rem;
 }
 
-.harleyPic {
-  margin-top: 110px;
+.aboutMe, .funFacts{
+margin-top: 2rem;
 }
+.skills{
+  display: flex;
+  flex-wrap: wrap;
 
-
-.contentPage {
-  flex-grow: 1;
-  width: 70%;
-  /* border-color: rgb(43, 226, 43);
-    border-style: solid; */
 }
-
-/* end home page */
-
 /* contact page */
+.contactPage {
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
+}
+
 .contactForm {
   padding: 0 40px 0 30px;
   margin-top: 90px;

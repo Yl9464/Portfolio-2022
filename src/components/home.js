@@ -4,7 +4,7 @@ import Pictures from "./pictures";
 
 function Home() {
     return (
-        <div className="homePage">
+        <div>
             <Header />
             <div className="homePage-flex-container">
             <Pictures />        
