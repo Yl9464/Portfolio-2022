@@ -8,8 +8,7 @@ function Content() {
                     I am a passionate, driven, and committed individual who is tenacious in the face of adversity.Transitioning from a dog trainer background,
                     I bring a diverse perspective to the tech world along with the patience and devotion that brought me success in previous roles.Having completed 
                     Framingham State University's Web Development certificate program, I now look forward to applying my coding skills in meaningful way that will make a 
-                    lasting and positive impact on society.                  
-                                                           
+                    lasting and positive impact on society.                                                           
                 </p>
             </div>
             <div className="funFacts">
@@ -22,8 +21,6 @@ function Content() {
                     <li> Proin vitae justo bibendum felis faucibus lobortis non eget odio.</li> 
                </ol>
             </div> 
-            <Skills />
-        </div>
     )
 }
 export default Content

@@ -25,7 +25,7 @@ function ContactForm() {
             fontWeight: 'bolder',
             marginTop: '40px'
         }}>
-
+        
         <Form className="contactForm w-50"ref={form} onSubmit={sendEmail}>
             <Row className="mb-3"> 
                     <Form.Group  as={Col} controlId="formGridEmail">
@@ -53,3 +53,5 @@ function ContactForm() {
     )
 }
 export default ContactForm
+
+

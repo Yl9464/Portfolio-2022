@@ -10,34 +10,30 @@ body {
   background-color: #2C3639;
   z-index: 1;
 }
-
 .nameBrand,
 .headerLinks,
 .navLinks {
-  /* font-weight: bolder; */
+  font-weight: bolder;
   color: #DCD7C9;
 }
 
-.contactLink {
+.contactLink{
   color: #FECD70;
   font-weight: bold;
 }
-
 /* end header */
 
 /*Home page */
 .homePage-flex-container {
   display: flex;
   height: 100%;
-  padding: 0 40px 0 30px;
+  padding: 0 40px 0 30px;  
   margin-top: 20px;
 }
 
-.contentSection,
-.pictures {
+.contentSection, .pictures{
   margin-top: 20px;
 }
-
 .aboutMe,
 .funFacts {
   margin-top: 2rem;
@@ -56,12 +52,9 @@ body {
   width: 17rem;
   height: 17rem;
 }
-/* contact page */
-.message{
-  text-align: center;
-  margin-top: 50px;
 
-}
+/* end header */
+
 
 /* general html elements */
 h4 {
@@ -72,5 +65,3 @@ h4 {
 p {
   padding-bottom: 10px;
 }
-
-
