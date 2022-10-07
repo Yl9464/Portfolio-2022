@@ -1,16 +1,8 @@
 body {
-    background: #eee;
-    padding: 0 16px;
-    height: 100%;
-      overflow: hidden;
-}
-.mainpage, .contactPage{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
+  background: DCD7C9;
+  background-color: #e3e1d7;
+  color: #2C3639;
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
 }
 
 /* header layout*/
@@ -21,7 +13,7 @@ body {
 .nameBrand,
 .headerLinks,
 .navLinks {
-  /* font-weight: bolder; */
+  font-weight: bolder;
   color: #DCD7C9;
 }
 
@@ -61,53 +53,11 @@ body {
   height: 17rem;
 }
 
-/* contact page */
-/* .contactPage {
-  background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
-} */
+/* end header */
 
-.contactForm {
-  padding: 0 40px 0 30px;
-  margin-top: 90px;
-  display: flex;
-  width: fit-content;
-  margin-top: 10rem;
-  margin-left: 40rem;
-}
 
-.pictures {
-  display: flex;
-  flex-direction: column;
-  width:fit-content;
-  /* border-color: blueviolet;
-  border-style: solid; */
-  margin-right: 50px;
- 
-}
-
-.profilePic,
-.harleyPic{
-width: 275px;
-height: 275px;
-border-radius: 20%;
-}
-
-.harleyPic{
-  margin-top: 110px;
-}
-
-.pageContent{
-  /* border-color: rgb(43, 226, 43);
-  border-style: solid; */
-  flex-grow: 1;
-  width: 70%;
-}
-/* .skills{
-   border-color: rgb(43, 134, 226);
-  border-style: solid; 
- } */
-  
-h4{
+/* general html elements */
+h4 {
   text-decoration: underline;
   margin-top: 15px;
 }
