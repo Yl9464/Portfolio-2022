@@ -15,11 +15,11 @@ function Contact() {
                 console.log(error.text);
             });
     }
-        
+
     return (
         <div className="contactPage">
-            <Header />
-           
+                <Header />
+
             <form className="contactForm" ref={form} onSubmit={sendEmail}>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -33,13 +33,13 @@ function Contact() {
                     <div class="form-group">
                         <div class="form-group col-md-6">
                             <label>Message</label>
-                            <textarea name="message" />   
-                        </div> 
+                            <textarea name="message" />
+                        </div>
                     </div>
                     <input type="submit" value="Send" />
                 </div>
             </form>
-       
+
         </div>
     )
 }

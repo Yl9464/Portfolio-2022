@@ -1,18 +1,18 @@
 import Content from "./content"
 import Header from "./header";
 import Pictures from "./pictures";
-
-function Mainpage() {
+   
+function Home() {
     return (
-        <div className="mainpage">
+        <div>
             <Header />
-            <div className="flex-container">
-            <Pictures />        
-            <Content />
+            <div className="homePage-flex-container">
+                <Pictures />        
+                <Content />
             </div>
       
         </div>
     )
 }
 
-export default Mainpage
+export default Home
