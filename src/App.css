@@ -1,6 +1,8 @@
 body {
   background: DCD7C9;
-  color: #3F4E4F;
+  background-color: #e3e1d7;
+  color: #2C3639;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
 }
 
 /* header layout*/
@@ -32,6 +34,14 @@ body {
 .contentSection, .pictures{
   margin-top: 20px;
 }
+.aboutMe,
+.funFacts {
+  margin-top: 2rem;
+}
+
+.funFacts {
+  margin-bottom: 9rem;
+}
 
 /* images */
 .pictures {
@@ -43,19 +53,10 @@ body {
   height: 17rem;
 }
 
-.aboutMe, .funFacts{
-margin-top: 2rem;
-
-}
-
-.funFacts{
-  margin-bottom: 9rem;
-}
-
 /* contact page */
-.contactPage {
+/* .contactPage {
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
-}
+} */
 
 .contactForm {
   padding: 0 40px 0 30px;

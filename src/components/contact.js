@@ -18,7 +18,7 @@ function Contact() {
 
     return (
         <div className="contactPage">
-            <Header />
+                <Header />
 
             <form className="contactForm" ref={form} onSubmit={sendEmail}>
                 <div class="form-row">
