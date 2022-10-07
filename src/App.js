@@ -1,6 +1,6 @@
 import './App.css';
 import Home from "./components/home"
-import Contact from "./components/contact"
+import Contact from "./components/contactPage/contact"
 import Resume from "./components/resume/resume"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
