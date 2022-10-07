@@ -1,6 +1,7 @@
 import './App.css';
-import Mainpage from "./components/mainpage"
-import Contact from './components/contact';
+import Home from "./components/home"
+import Contact from "./components/contactPage/contact"
+import Resume from "./components/resume/resume"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 
@@ -9,7 +10,8 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Mainpage />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
 
