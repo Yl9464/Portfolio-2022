@@ -14,6 +14,7 @@ function Contact() {
             }, (error) => {
                 console.log(error.text);
             });
+<<<<<<< HEAD
     };
     return (
         <div className="contactPage">
@@ -27,6 +28,34 @@ function Contact() {
                         <textarea name="message" />
                         <input type="submit" value="Send" />
                     </form>
+=======
+    }
+
+    return (
+        <div className="contactPage">
+                <Header />
+
+            <form className="contactForm" ref={form} onSubmit={sendEmail}>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Name</label>
+                        <input type="text" name="user_name" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Email</label>
+                        <input type="email" name="user_email" />
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group col-md-6">
+                            <label>Message</label>
+                            <textarea name="message" />
+                        </div>
+                    </div>
+                    <input type="submit" value="Send" />
+                </div>
+            </form>
+
+>>>>>>> 7e66b8ef8c35f9f5b9bfe3d77649c4ba10794757
         </div>
     )
 }

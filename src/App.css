@@ -13,29 +13,66 @@ body {
     overflow: auto;
 }
 
-.header_section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color:rgba(183, 192, 192, 0.536);
+/* header layout*/
+.header-section {
+  background-color: #2C3639;
+  z-index: 1;
+}
+.nameBrand,
+.headerLinks,
+.navLinks {
+  /* font-weight: bolder; */
+  color: #DCD7C9;
+}
+
+.contactLink{
+  color: #FECD70;
+  font-weight: bold;
+}
+/* end header */
+
+/*Home page */
+.homePage-flex-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
+  height: 100%;
+  padding: 0 40px 0 30px;  
+  margin-top: 20px;
+}
 
-  }
+.contentSection, .pictures{
+  margin-top: 20px;
+}
+.aboutMe,
+.funFacts {
+  margin-top: 2rem;
+}
 
-.flex-container{
+.funFacts {
+  margin-bottom: 9rem;
+}
+
+/* images */
+.pictures {
+  margin-right: 50px;
+}
+
+.profilePic {
+  width: 17rem;
+  height: 17rem;
+}
+
+/* contact page */
+/* .contactPage {
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
+} */
+
+.contactForm {
   padding: 0 40px 0 30px;
   margin-top: 90px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  height: 100%;
-  /* border-color: rgb(19, 21, 19);
-    border-style: solid; */
+  width: fit-content;
+  margin-top: 10rem;
+  margin-left: 40rem;
 }
 
 .pictures {
@@ -72,65 +109,9 @@ border-radius: 20%;
   
 h4{
   text-decoration: underline;
+  margin-top: 15px;
 }
- h4, p {
+
+p {
   padding-bottom: 10px;
- }
-
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
-  padding: 7px 25px;
-  margin: 0 10px;
-  color: #141a1a;
-  text-align: center;
-  border-radius: 5px;
 }
-
-.nav-item.active .nav-link,
-.custom_nav-container.navbar-expand-lg 
-.navbar-nav .nav-item:hover .nav-link {
-  background-color: #f0b016;
-  color: #ffffff;
-}
-
-.btn,
-.btn:focus {
-  outline: none !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.custom_nav-container .nav_search-btn {
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-}
-
-.navbar .navbar-brand {
-  display: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.navbar .navbar-brand img {
-  width: 90px;
-  margin-right: 5px;
-}
-
-.custom_nav-container {
-  z-index: 99999;
-  padding: 5px 0;
-}
-
-.custom_nav-container .navbar-toggler {
-  outline: none;
-}
-
-.custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-size: 45px;
-}
-
