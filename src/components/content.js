@@ -21,6 +21,8 @@ function Content() {
                     <li> Proin vitae justo bibendum felis faucibus lobortis non eget odio.</li> 
                </ol>
             </div> 
+            <Skills />
+        </div> 
     )
 }
 export default Content
