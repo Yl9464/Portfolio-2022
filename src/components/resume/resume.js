@@ -60,8 +60,21 @@ function Resume() {
                         <p>High School Diploma</p>
                     </Accordion.Body>
                 </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                    <Accordion.Header>Skills</Accordion.Header>
+                    <Accordion.Body>
+
+                        <ul>
+                            <li>  Chai, CSS, Express, </li>
+                            <li> HTML, JavaScript, Mocha, </li>
+                            <li>MySQL, Node.js, React, </li>    
+                            <li>RESTful APIs, Postman, Sequelize </li>                 
+                       </ul>
+                    </Accordion.Body>
+                </Accordion.Item>
             </Accordion>
         </div>
+
         );
     }
 export default Resume
