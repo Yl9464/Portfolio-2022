@@ -27,7 +27,7 @@ color: #DCD7C9;
 /* end header */
 
 /*Home page */
-.homePage-flex-container {
+.homePage-flex-container, .resume-flex-container {
   display: flex;
   height: 100%;
   padding: 0 40px 0 30px;  
@@ -39,7 +39,8 @@ color: #DCD7C9;
   margin-right: 110px;
 }
 .aboutMe,
-.aspirations {
+.aspirations,
+.resumeContent {
   margin-top: 2rem;
 }
 
@@ -47,15 +48,21 @@ color: #DCD7C9;
   margin-bottom: 9rem;
 }
 
-/* images */
 
+/* images */
 .profilePic {
   width: 17rem;
   height: 17rem;
     margin: 90px 50px 0 25px;
 }
-
-/* end header */
+/* resume */
+.row {
+  width: 72%;
+}
+.accordion-button:not(.collapsed), .accordion-button, .accordion-button-icon {
+  background-color: #2C3639 !important;
+  color:#DCD7C9;
+} 
 
 /* contactForm */
 .message{
@@ -68,15 +75,6 @@ h5{
   
 }
 
-/* resume */
-/* .accordion{
-      --bs-accordion-bg: rgba(255, 255, 255, 0);    
-      color: #e3e1d7;
-}
-.accordion-header {
-  background-color: #e3e1d7;
-    color: #2C3639;
-} */
 h4 {
   text-decoration: underline;
   margin-top: 15px;
