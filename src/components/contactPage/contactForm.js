@@ -19,36 +19,35 @@ function ContactForm() {
             });
     };
     return (
-        <div style={{
-            display: 'block',
-            marginLeft: '25rem',
-            fontWeight: 'bolder',
-            marginTop: '40px'
-        }}>
-        
-        <Form className="contactForm w-50"ref={form} onSubmit={sendEmail}>
-            <Row className="mb-3"> 
-                    <Form.Group  as={Col} controlId="formGridEmail">
+  
+        <Form ref={form} onSubmit={sendEmail}>
+            <Row className="contactFormInputs g-6 mb-3"> 
+                <Col md lg="3">
+                    <Form.Group  as={Col}  controlId="formGridEmail">
                         <Form.Label>Name</Form.Label>
                         <Form.Control  type="text" placeholder="First & Last Name" />
                     </Form.Group>
-                
-                    <Form.Group as={Col} controlId="formGridEmail">
+                </Col>
+                <Col md lg="3">
+
+            
+                <Form.Group as={Col}  controlId="formGridEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
-                </Form.Group>
+                    </Form.Group>
+                </Col>
             </Row>
 
-            <Form.Group  className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Group  className=" g-6 mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Your messesage</Form.Label>
-                <Form.Control as="textarea" rows={3}/>
+                <Form.Control as="textarea" style={{ height: '110px', width: "50%" }}
+/>
             </Form.Group>
 
             <Button variant="primary" type="submit">
                 Submit
             </Button>
             </Form>
-    </div>
 
     )
 }

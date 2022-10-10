@@ -27,7 +27,9 @@ color: #DCD7C9;
 /* end header */
 
 /*Home page */
-.homePage-flex-container, .resume-flex-container {
+.homePage-flex-container, 
+.resume-flex-container, 
+.contact-flex-container {
   display: flex;
   height: 100%;
   padding: 0 40px 0 30px;  
@@ -37,15 +39,18 @@ color: #DCD7C9;
 .contentSection, .pictures{
   margin-top: 20px;
   margin-right: 110px;
+  line-height: 2.5;
 }
+
 .aboutMe,
 .aspirations,
-.resumeContent {
+.resumeContent,
+.contactPageContent{
   margin-top: 2rem;
 }
 
-.funFacts {
-  margin-bottom: 9rem;
+.aspirations {
+  margin-top: 5rem;
 }
 
 
@@ -53,26 +58,33 @@ color: #DCD7C9;
 .profilePic {
   width: 17rem;
   height: 17rem;
-    margin: 90px 50px 0 25px;
+  margin: 90px 50px 0 25px;
 }
-/* resume */
-.row {
-  width: 72%;
+/* resume page */
+.contactFormInputs {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.skillsRow {
+  margin-top: 50px;
 }
 .accordion-button:not(.collapsed), .accordion-button, .accordion-button-icon {
   background-color: #2C3639 !important;
   color:#DCD7C9;
 } 
 
-/* contactForm */
-.message{
-  text-align: center;
-  margin-top: 40px;
+/* contact page */
+.contactPageContent {
+  width: 100%;
+  word-spacing: 2px;
 }
 
+form {
+  margin-left: 15rem;
+}
 h5{
   text-decoration: underline;
-  
 }
 
 h4 {
@@ -80,6 +92,6 @@ h4 {
   margin-top: 15px;
 }
 
-p {
+/* p {
   padding-bottom: 10px;
-}
+} */

@@ -10,8 +10,7 @@ function Resume() {
             <div className='resume-flex-container'>
                 <Pictures />
                 
-                <Row className='accordionRows'>
-            
+                <Row>
                     <Accordion className='resumeContent' defaultActiveKey={['0']} flush>
                         <Accordion.Item className="resumeLayout" eventKey="0">
                             <Accordion.Header style={{ backgroundColor: '#2C3639'}}>Work History</Accordion.Header>

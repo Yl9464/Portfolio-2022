@@ -7,7 +7,7 @@ function Skills() {
     return (
    
     <Container>
-      <Row >
+      <Row classname="skillsRow" >
         <Col> <FontAwesomeIcon icon="fa-brands fa-js fa-5x" size="5x" fa-fw /> </Col>
         <Col>  <FontAwesomeIcon icon="fa-brands fa-css3-alt" size="5x" fa-fw /></Col>
         <Col> <FontAwesomeIcon icon="fa-brands fa-node" size="5x" fa-fw /></Col>   
