@@ -6,7 +6,7 @@ function Header() {
     return (
         <Navbar className="header-section" expand="lg">
             <Container>
-                <Navbar.Brand className="nameBrand" href="#">Ying Lu</Navbar.Brand>
+                <Navbar.Brand className="nameBrand" href="/contact">Ying Lu</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="navLinks ms-auto">

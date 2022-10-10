@@ -8,22 +8,27 @@ body {
 /* header layout*/
 .header-section {
   background-color: #2C3639;
-  z-index: 1;
 }
+
 .nameBrand,
 .headerLinks,
 .navLinks {
 color: #DCD7C9;
 }
 
+.navbar .navbar-brand{
+  color: #DCD7C9 !important
+}
+
 .contactLink{
   color: #FECD70;
   font-weight: bold;
 }
-/* end header */
 
-/*Home page */
-.homePage-flex-container {
+/*flex-containers, page and conent layouts */
+.homePage-flex-container, 
+.resume-flex-container, 
+.contact-flex-container {
   display: flex;
   height: 100%;
   padding: 0 40px 0 30px;  
@@ -32,39 +37,59 @@ color: #DCD7C9;
 
 .contentSection, .pictures{
   margin-top: 20px;
+  margin-right: 110px;
+  line-height: 2.5;
 }
+
 .aboutMe,
-.funFacts {
+.aspirations,
+.resumeContent,
+.contactPageContent{
   margin-top: 2rem;
 }
 
-.funFacts {
-  margin-bottom: 9rem;
+.aspirations {
+  margin-top: 5rem;
 }
 
 /* images */
-.pictures {
-  margin-right: 50px;
-}
-
 .profilePic {
   width: 17rem;
   height: 17rem;
+  margin: 90px 50px 0 25px;
 }
 
-/* end header */
-
-/* contactForm */
-.message{
-  text-align: center;
-  margin-top: 40px;
+/* resume page */
+.skillsRow {
+  margin-top: 50px;
 }
-/* general html elements */
+.accordion-button:not(.collapsed), .accordion-button, .accordion-button-icon {
+  background-color: #2C3639 !important;
+  color:#DCD7C9;
+} 
+.accordionRows{
+  width: 71%;
+}
+
+/* contact page */
+.contactPageContent {
+  width: 100%;
+  word-spacing: 2px;
+}
+
+form {
+  margin-left: 15rem;
+}
+.contactFormInputs {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+/* html elements */
+h5{
+  text-decoration: underline;
+}
+
 h4 {
   text-decoration: underline;
   margin-top: 15px;
-}
-
-p {
-  padding-bottom: 10px;
 }
