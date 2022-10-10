@@ -2,6 +2,8 @@ import Accordion from 'react-bootstrap/Accordion';
 import Header from "../header"
 import Pictures from "../pictures"
 import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 
 function Resume() {
     return (
@@ -10,7 +12,7 @@ function Resume() {
             <div className='resume-flex-container'>
                 <Pictures />
                 
-                <Row>
+                <Row className="accordionRows">
                     <Accordion className='resumeContent' defaultActiveKey={['0']} flush>
                         <Accordion.Item className="resumeLayout" eventKey="0">
                             <Accordion.Header style={{ backgroundColor: '#2C3639'}}>Work History</Accordion.Header>
@@ -76,13 +78,37 @@ function Resume() {
                 <Accordion className='resumeContent' defaultActiveKey="0" flush>
                     <Accordion.Item className="resumeLayout" eventKey="0">
                     <Accordion.Header>Skills</Accordion.Header>
-                    <Accordion.Body>
-                        <ul>
-                            <li>  Chai, CSS, Express, </li>
-                            <li> HTML, JavaScript, Mocha, </li>
-                            <li>MySQL, Node.js, React, </li>
-                            <li>RESTful APIs, Postman, Sequelize </li>
-                        </ul>
+                            <Accordion.Body>
+                                <Container>
+                                    <Row>
+                                        <Col>Chai</Col>
+                                        <Col>CSS</Col>
+                                        <Col>Express</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>HTML</Col>
+                                        <Col>JavaScript</Col>
+                                        <Col>JQuery</Col>
+                                        
+                                    </Row>
+                                    <Row>
+                                        <Col>Mocha</Col>
+                                        <Col>MongoDB</Col>
+                                        <Col>MySQL</Col>
+                                      
+                                    
+                                    </Row>
+                                    <Row>
+                                        <Col>Node.js</Col>
+                                        <Col>React</Col>
+                                        <Col>React-Bootstrap</Col>
+                                    </Row> 
+                                     <Row>      
+                                        <Col>RESTful APIs</Col>
+                                        <Col>Postman</Col>
+                                        <Col>Sequelize</Col>
+                                    </Row>
+                                </Container>
                     </Accordion.Body>
                 </Accordion.Item>
                     </Accordion>

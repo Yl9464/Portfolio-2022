@@ -24,9 +24,8 @@ color: #DCD7C9;
   color: #FECD70;
   font-weight: bold;
 }
-/* end header */
 
-/*Home page */
+/*flex-containers, page and conent layouts */
 .homePage-flex-container, 
 .resume-flex-container, 
 .contact-flex-container {
@@ -53,19 +52,14 @@ color: #DCD7C9;
   margin-top: 5rem;
 }
 
-
 /* images */
 .profilePic {
   width: 17rem;
   height: 17rem;
   margin: 90px 50px 0 25px;
 }
-/* resume page */
-.contactFormInputs {
-  margin-top: 50px;
-  padding-bottom: 20px;
-}
 
+/* resume page */
 .skillsRow {
   margin-top: 50px;
 }
@@ -73,6 +67,9 @@ color: #DCD7C9;
   background-color: #2C3639 !important;
   color:#DCD7C9;
 } 
+.accordionRows{
+  width: 71%;
+}
 
 /* contact page */
 .contactPageContent {
@@ -83,6 +80,11 @@ color: #DCD7C9;
 form {
   margin-left: 15rem;
 }
+.contactFormInputs {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+/* html elements */
 h5{
   text-decoration: underline;
 }
@@ -91,7 +93,3 @@ h4 {
   text-decoration: underline;
   margin-top: 15px;
 }
-
-/* p {
-  padding-bottom: 10px;
-} */
