@@ -8,12 +8,16 @@ body {
 /* header layout*/
 .header-section {
   background-color: #2C3639;
-  z-index: 1;
 }
+
 .nameBrand,
 .headerLinks,
 .navLinks {
 color: #DCD7C9;
+}
+
+.navbar .navbar-brand{
+  color: #DCD7C9 !important
 }
 
 .contactLink{
@@ -32,6 +36,7 @@ color: #DCD7C9;
 
 .contentSection, .pictures{
   margin-top: 20px;
+  margin-right: 110px;
 }
 .aboutMe,
 .aspirations {
@@ -43,13 +48,11 @@ color: #DCD7C9;
 }
 
 /* images */
-.pictures {
-  margin-right: 50px;
-}
 
 .profilePic {
   width: 17rem;
   height: 17rem;
+    margin: 90px 50px 0 25px;
 }
 
 /* end header */

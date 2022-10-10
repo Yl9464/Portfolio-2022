@@ -23,7 +23,7 @@ function Content() {
                     and strong mindset I know I will reach that goal.
                 </p>
             </div> 
-            <Skills />
+                <Skills />
         </div> 
     )
 }
