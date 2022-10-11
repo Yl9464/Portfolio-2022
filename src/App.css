@@ -1,23 +1,24 @@
 body {
-  background: DCD7C9;
-  background-color: #e3e1d7;
+  background-color: #dcd7c97b;
   color: #2C3639;
-  background-image: url("https://www.transparenttextures.com/patterns/gplay.png")
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+  font-family: 'Inter Tight', sans-serif
 }
 
 /* header layout*/
 .header-section {
   background-color: #2C3639;
+  font-weight: bold;
 }
 
 .nameBrand,
 .headerLinks,
 .navLinks {
-color: #DCD7C9;
+color: #dcd7c9;
 }
 
 .navbar .navbar-brand{
-  color: #DCD7C9 !important
+  color: #dcd7c9 !important
 }
 
 .contactLink{
@@ -35,7 +36,11 @@ color: #DCD7C9;
   margin-top: 20px;
 }
 
-.contentSection, .pictures{
+.homeRight{
+  line-height: 2;
+  margin-right: 30px;
+}
+ .homeLeft{
   margin-top: 20px;
   margin-right: 110px;
   line-height: 2.5;
@@ -52,37 +57,65 @@ color: #DCD7C9;
   margin-top: 5rem;
 }
 
+.skillsContainer {
+  margin-left: 50px;
+}
 /* images */
 .profilePic {
   width: 17rem;
   height: 17rem;
-  margin: 90px 50px 0 25px;
+  margin: 20px 50px 50px 25px
 }
 
 /* resume page */
 .skillsRow {
-  margin-top: 50px;
+  margin: 60px 50px 0 5p
 }
+
 .accordion-button:not(.collapsed), .accordion-button, .accordion-button-icon {
   background-color: #2C3639 !important;
-  color:#DCD7C9;
+  color:#dcd7c9;
+  font-weight: bolder;
 } 
+
 .accordionRows{
   width: 71%;
 }
 
-/* contact page */
-.contactPageContent {
-  width: 100%;
-  word-spacing: 2px;
+.accordion-body {
+  word-spacing: 4px;
+  line-height: 2;
 }
 
-form {
-  margin-left: 15rem;
+/* contact page */
+.contactPageRight {
+  word-spacing: 2;
+  align-self: center;
+}
+
+.contactMessage{
+  line-height: 2.5;
+    font-weight: bold;
+}
+
+label.form-label{
+  font-weight: bold;
 }
 .contactFormInputs {
   margin-top: 50px;
   padding-bottom: 20px;
+}
+
+.btn{
+  background-color: #2C3639;
+  border-color: #2C3639;
+  color:#dcd7c9;
+  font-weight: bold;
+}
+
+.btn:hover{
+  background-color: #FECD70;
+
 }
 /* html elements */
 h5{
@@ -91,5 +124,5 @@ h5{
 
 h4 {
   text-decoration: underline;
-  margin-top: 15px;
+  font-weight: bolder;
 }

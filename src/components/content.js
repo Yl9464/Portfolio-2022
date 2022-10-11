@@ -1,9 +1,9 @@
-import Skills from './skills'
+
 function Content() {
     return (
-        <div className="contentSection">
+        <div className="homeRight">
             <div className="aboutMe">
-                <h4>About me</h4>
+                <h4>About me:</h4>
                 <p>
                     I am a Junior Full Stack developer and received a certification in web development from Framingham State University.
                     During my program I realized my unique mindset allowed me to view problems in a way that could establish resolutions
@@ -16,14 +16,14 @@ function Content() {
                 </p>
             </div>
             <div className="aspirations">
-                <h4>My Aspirations:</h4>
+                <h4>Aspirations:</h4>
                 <p>
                     Technology is the future; every day new and amazing products are being developed to strengthen and advance society.
                     My goal is to be a part of the teams who are creating these cutting-edge technologies, between my professional skills
                     and strong mindset I know I will reach that goal.
                 </p>
             </div> 
-                <Skills />
+                
         </div> 
     )
 }
