@@ -58,18 +58,16 @@ function Resume() {
              
                     <Accordion.Header>Education</Accordion.Header>
                     <Accordion.Body>
-
                         <h5>Web Development Certification, Framingham State University, Framingham MA</h5>
-                        <u>October 2021- February 2022</u>
+                        <p><b>October 2021 - February 2022</b></p>
                         <p>An accelerated program in which students are taught the fundamentals of coding from industry-practitioner instructors. Skills are developed for in-demand technologies such as JavaScript, Node.js, MySQL, React, Express & RESTful APIs. Students gain real-world experience through a co-op-style industry project.</p>
 
                         <h5>Guilford College, Greensboro, NC </h5>
-                        <u>September 2011 -May 2015</u>
-                        <p>Marjor: Criminal Justic </p>
-                        <p>Minor: Cyber Security</p>
+                        <p><b>September 2011 - May 2015</b></p>
+                        <p>Marjor: Criminal Justice <b>~</b> Minor: Cyber Security</p>
 
                         <h5>The Cambridge School of Weston, Weston, MA </h5>
-                        <u>September 2011 - May 2015</u>
+                        <p><b>September 2011 - May 2015</b></p>    
                         <p>High School Diploma</p>
                     </Accordion.Body>
                 </Accordion.Item>

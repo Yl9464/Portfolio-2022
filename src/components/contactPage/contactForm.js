@@ -21,24 +21,22 @@ function ContactForm() {
     return (
   
         <Form ref={form} onSubmit={sendEmail}>
-            <Row className="contactFormInputs g-6 mb-3"> 
+            <Row className="mb-3"> 
                 <Col md lg="3">
                     <Form.Group  as={Col}  controlId="formGridEmail">
                         <Form.Label>Name</Form.Label>
-                        <Form.Control  type="text" placeholder="First & Last Name" />
+                        <Form.Control  type="text" placeholder="Full Name" />
                     </Form.Group>
                 </Col>
                 <Col md lg="3">
-
-            
                 <Form.Group as={Col}  controlId="formGridEmail">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control type="email" placeholder="Email" />
                     </Form.Group>
                 </Col>
             </Row>
 
-            <Form.Group  className=" g-6 mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Group  className="mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Your messesage</Form.Label>
                 <Form.Control as="textarea" style={{ height: '110px', width: "50%" }}
 />
