@@ -1,16 +1,24 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
+import React, { useRef, useState } from 'react';
+import { Button, Col, Form, Row, Overlay } from 'react-bootstrap';
+import emailjs from "@emailjs/browser"
 
-function FormFunctionality () {
-    const [formStatus, setFormStatus] = useState('Send')
+function FormFunctionality() {
+    // const [formStatus, setFormStatus] = useState('Send')
+    const [show, setShow] = useState(false);
+
+    const form = useRef();
+    const target = useRef(null)
 
     const onSubmit = (e) => {
         e.preventDefault()
-
-        setFormStatus('Submitting...')
+       
+        emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        
         const { formGridName, formGridEmail, ControlTextarea1 } = e.target.elements
 
         let conForm = {
@@ -22,7 +30,7 @@ function FormFunctionality () {
     }
 
     return (
-        <Form  onSubmit={onSubmit}>
+        <Form onSubmit={onSubmit}>
             <Row className="mb-3">
                 <Col md lg="3">
                     <Form.Group as={Col} controlId="formGridName">
@@ -44,10 +52,21 @@ function FormFunctionality () {
                 />
             </Form.Group>
 
-            <Button type="submit">
-                {formStatus}
+            <Button ref={target} type="submit" onClick={() => setShow(!show)}>
+                Submit
             </Button>
+            <Overlay target={target.current} show={show} placement="bottom">
+                <div style={{
+                    position: 'absolute',
+                    marginTop: '15px',
+                    color: "#2C3639",
+                    fontWeight: "bold"
+                }}>
+                    Email was sent successfully! I will respond as a soon as I can.
+                </div>
+            </Overlay>
+
         </Form>
-)
+    )
 }
 export default FormFunctionality 
