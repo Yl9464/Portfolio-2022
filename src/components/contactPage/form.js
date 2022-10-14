@@ -3,39 +3,32 @@ import { Button, Col, Form, Row, Overlay } from 'react-bootstrap';
 import emailjs from "@emailjs/browser"
 
 function FormFunctionality() {
-    // const [formStatus, setFormStatus] = useState('Send')
-    const [show, setShow] = useState(false);
 
+    const [show, setShow] = useState(false);
     const form = useRef();
     const target = useRef(null)
 
     const onSubmit = (e) => {
-        e.preventDefault()
-       
-        emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID
+        const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+        const userId = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         
-        const { formGridName, formGridEmail, ControlTextarea1 } = e.target.elements
-
-        let conForm = {
-            name: formGridName.value,
-            email: formGridEmail.value,
-            message: ControlTextarea1.value
+        e.preventDefault()
+        
+        emailjs.send(serviceId, templateId, form.current, userId)
+            .then(result => console.log(result))
+            .then(error => console.log(error))
+        
+            form.reset()
         }
-        console.log(conForm);
-    }
-
+    
     return (
-        <Form onSubmit={onSubmit}>
+        <Form onSubmit={onSubmit} >
             <Row className="mb-3">
                 <Col md lg="3">
                     <Form.Group as={Col} controlId="formGridName">
                         <Form.Label>Name</Form.Label>
-                        <Form.Control type="text" placeholder="Full Name" />
+                        <Form.Control  type="text" placeholder="Full Name" />
                     </Form.Group>
                 </Col>
                 <Col md lg="3">
@@ -58,8 +51,9 @@ function FormFunctionality() {
             <Overlay target={target.current} show={show} placement="bottom">
                 <div style={{
                     position: 'absolute',
-                    marginTop: '15px',
                     color: "#2C3639",
+                    paddingLeft: '260px',
+                    marginTop: '15px',
                     fontWeight: "bold"
                 }}>
                     Email was sent successfully! I will respond as a soon as I can.
