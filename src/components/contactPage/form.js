@@ -11,12 +11,12 @@ function FormFunctionality () {
         e.preventDefault()
 
         setFormStatus('Submitting...')
-        const { name, email, message } = e.target.elements
+        const { formGridName, formGridEmail, ControlTextarea1 } = e.target.elements
 
         let conForm = {
-            name: name.value,
-            email: email.value,
-            message: message.value
+            name: formGridName.value,
+            email: formGridEmail.value,
+            message: ControlTextarea1.value
         }
         console.log(conForm);
     }
@@ -25,7 +25,7 @@ function FormFunctionality () {
         <Form  onSubmit={onSubmit}>
             <Row className="mb-3">
                 <Col md lg="3">
-                    <Form.Group as={Col} controlId="formGridEmail">
+                    <Form.Group as={Col} controlId="formGridName">
                         <Form.Label>Name</Form.Label>
                         <Form.Control type="text" placeholder="Full Name" />
                     </Form.Group>
@@ -40,7 +40,7 @@ function FormFunctionality () {
 
             <Form.Group className="mb-3" controlId="ControlTextarea1">
                 <Form.Label>Your messesage</Form.Label>
-                <Form.Control as="textarea"  style={{ height: '110px', width: "50%" }}
+                <Form.Control as="textarea" style={{ height: '110px', width: "50%" }}
                 />
             </Form.Group>
 
