@@ -3,14 +3,10 @@ import { Button, Col, Form, Row} from 'react-bootstrap';
 import emailjs from "@emailjs/browser"
 
 function FormFunctionality() {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
     const [formStatus,setFormStatus] = useState('')
-    const [clearForm, setClearForm] = useState({
-        user_name: '',
-        user_email: '',
-        message: ''
-    })
-
-    const clearContactForm = () => setClearForm(clearForm)
 
     const form = useRef();
 
@@ -18,14 +14,23 @@ function FormFunctionality() {
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
     const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
 
+    // const handleChange = (e) => {
+    //     const { name, email, message, value } = e.target
+    //     setClearForm((prevState) => ({ ...prevState, [name]: value, [email]: value, [message]: value }))
+    // }
+
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm(serviceId, templateId, form.current, publicKey)
             .then((result) => {
                 console.log(result.text);
-                clearContactForm()
+        
                 setFormStatus('Email sent successfully! I will be in touch shortly 😁')
+               
+                setName('')
+                setEmail('')
+                setMessage('')
             }, (error) => {
                 console.log(error.text);
             });
@@ -41,6 +46,8 @@ function FormFunctionality() {
                             <Form.Control
                                 type="text"
                                 name="user_name"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
                                 placeholder="Full Name" />
                         </Form.Group>
                     </Col>
@@ -50,6 +57,8 @@ function FormFunctionality() {
                             <Form.Control
                                 type="email"
                                 name="user_email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 placeholder="Email" />
                         </Form.Group>
                     </Col>
@@ -60,6 +69,8 @@ function FormFunctionality() {
                         <Form.Control
                             type="textarea"
                             name="message"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
                             style={{ height: '110px', width: "50%" }} />
                         </Form.Group>
 
