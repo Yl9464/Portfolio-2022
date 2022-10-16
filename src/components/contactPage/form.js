@@ -1,8 +1,16 @@
-import React, { useRef} from 'react';
+import React, { useState, useRef} from 'react';
 import { Button, Col, Form, Row} from 'react-bootstrap';
 import emailjs from "@emailjs/browser"
 
 function FormFunctionality() {
+    const [formStatus,setFormStatus] = useState('')
+    const [clearForm, setClearForm] = useState({
+        user_name: '',
+        user_email: '',
+        message: ''
+    })
+
+    const clearContactForm = () => setClearForm(clearForm)
 
     const form = useRef();
 
@@ -16,6 +24,8 @@ function FormFunctionality() {
         emailjs.sendForm(serviceId, templateId, form.current, publicKey)
             .then((result) => {
                 console.log(result.text);
+                clearContactForm()
+                setFormStatus('Email sent successfully! I will be in touch shortly 😁')
             }, (error) => {
                 console.log(error.text);
             });
@@ -55,16 +65,10 @@ function FormFunctionality() {
 
             <Button type="submit">Submit </Button>
             </Form>
+            <p>{formStatus}</p>
     </div>
  );
 };
        
 export default FormFunctionality 
 
-    // <label> Name</label>
-    // <input type="text" name="user_name" />
-    // <label>Email</label>
-    // <input type="email" name="user_email" />
-    // <label>Message</label>
-    // <textarea name="message" />
-    // <input type="submit" value="Send" />
