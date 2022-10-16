@@ -7,18 +7,18 @@ function Skills() {
   return (
     <Container className="skillsContainer">
       <Row className='mb-3'>
-        <Col><FontAwesomeIcon icon="fa-brands fa-js fa-5x" size="5x" fa-fw /></Col>
-        <Col><FontAwesomeIcon icon="fa-brands fa-css3-alt" size="5x" fa-fw /></Col>
+        <Col><FontAwesomeIcon icon="fa-brands fa-js fa-5x" size="5x" fa-fw="true" /></Col>
+        <Col><FontAwesomeIcon icon="fa-brands fa-css3-alt" size="5x" fa-fw="true" /></Col>
       </Row>   
       
       <Row className='mb-3'>
-        <Col> <FontAwesomeIcon icon="fa-brands fa-node" size="5x" fa-fw /></Col>   
-        <Col> <FontAwesomeIcon icon="fa-brands fa-github" size="5x" fa-fw /></Col>
+        <Col> <FontAwesomeIcon icon="fa-brands fa-node" size="5x" fa-fw="true" /></Col>   
+        <Col> <FontAwesomeIcon icon="fa-brands fa-github" size="5x" fa-fw="true" /></Col>
       </Row>
 
       <Row className='mb-3'>
-        <Col> <FontAwesomeIcon icon="fa-brands fa-html5" size="5x" fa-fw /></Col>
-        <Col> <FontAwesomeIcon icon="fa-brands fa-react" size="5x" fa-fw /> </Col>
+        <Col> <FontAwesomeIcon icon="fa-brands fa-html5" size="5x" fa-fw="true" /></Col>
+        <Col> <FontAwesomeIcon icon="fa-brands fa-react" size="5x" fa-fw="true" /> </Col>
       </Row>
     </Container>
 )

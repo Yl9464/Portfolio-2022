@@ -1,6 +1,7 @@
 import ContactForm from "./contactForm"
 import Header from "../header"
 import Pictures from "../pictures"
+// import NewForm from "./newForm"
 
 function Contact() {
 
