@@ -89,13 +89,15 @@ color: #dcd7c9;
 
 /* contact page */
 .contactPageRight {
-  word-spacing: 2;
   align-self: center;
 }
 
 .contactMessage{
   line-height: 2.5;
-    font-weight: bold;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-right: 130px;
+
 }
 
 label.form-label{
@@ -115,7 +117,16 @@ label.form-label{
 
 .btn:hover{
   background-color: #FECD70;
+  color: #2C3639;
+}
 
+.contactPageRight {
+  place-self: flex-start;
+  margin-top: 70px;
+}
+.formStatus{
+  margin-top: 20px;
+  text-align: left;
 }
 /* html elements */
 h5{
