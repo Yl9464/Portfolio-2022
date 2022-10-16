@@ -82,7 +82,7 @@ function FormFunctionality() {
 
             <Button type="submit">Submit </Button>
             </Form>
-            <p>{formStatus}</p>
+            <p className='formStatus'>{formStatus}</p>
     </div>
  );
 };
