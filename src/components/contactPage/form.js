@@ -37,20 +37,20 @@ function FormFunctionality() {
            
     return (
         <div>
-            <Form  ref={form} onSubmit={sendEmail}>
+            <Form ref={form} onSubmit={sendEmail}>
                 <Row className="mb-3">
-                <Col md lg="3">
+                    <Col md lg="3">
                         <Form.Group as={Col} controlId="validationCustom03" >
-                        <Form.Label>Name</Form.Label>
+                            <Form.Label>Name</Form.Label>
                             <Form.Control
                                 type="text"
                                 name="user_name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                placeholder="Full Name" 
-                                required= {true}
-                                />
-                       
+                                placeholder="Full Name"
+                                required={true}
+                            />
+
                         </Form.Group>
                     </Col>
                     <Col md lg="3">
@@ -61,29 +61,29 @@ function FormFunctionality() {
                                 name="user_email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                placeholder="Email" 
+                                placeholder="Email"
                                 required={true}
-                                />
-                          
+                            />
+
                         </Form.Group>
                     </Col>
-                    </Row>
+                </Row>
 
-                    <Form.Group className="mb-3" >
-                        <Form.Label>Your messesage</Form.Label>
-                        <Form.Control
-                            type="textarea"
-                            name="message"
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
-                            style={{ height: '110px', width: "50%" }}
-                            required={true}/>
-                        </Form.Group>
+                <Form.Group className="mb-3" >
+                    <Form.Label>Your messesage</Form.Label>
+                    <Form.Control
+                        type="textarea"
+                        name="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        style={{ height: '110px', width: "50%" }}
+                        required={true} />
+                </Form.Group>
 
-            <Button type="submit">Submit </Button>
+                <Button type="submit">Submit </Button>
             </Form>
             <p className='formStatus'>{formStatus}</p>
-    </div>
+        </div>
  );
 };
        

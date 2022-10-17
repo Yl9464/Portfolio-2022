@@ -5,10 +5,8 @@ import FormFunctionality from "./form";
 function ContactForm() {
 
     return (
-        <div>
             <FormFunctionality />
-        </div>
-
+    
     )
 }
 export default ContactForm
