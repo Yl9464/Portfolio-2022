@@ -31,19 +31,18 @@ color: #dcd7c9;
 .resume-flex-container, 
 .contact-flex-container {
   display: flex;
-  height: 100%;
+  /* height: 100%; */
   padding: 0 40px 0 30px;  
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .homeRight{
   line-height: 2;
   margin-right: 30px;
+  align-self: center;
 }
  .homeLeft{
-  margin-top: 20px;
   margin-right: 110px;
-  line-height: 2.5;
 }
 
 .aboutMe,
@@ -58,18 +57,20 @@ color: #dcd7c9;
 }
 
 .skillsContainer {
-  margin-left: 50px;
+  margin-left: 34px;
 }
 /* images */
 .profilePic {
   width: 17rem;
   height: 17rem;
-  margin: 20px 50px 50px 25px
+  margin: 10px;
+  padding-bottom: 10px;
+
 }
 
 /* resume page */
 .skillsRow {
-  margin: 60px 50px 0 5p
+  margin: 60px 50px 0 5px
 }
 
 .accordion-button:not(.collapsed), .accordion-button, .accordion-button-icon {
@@ -88,16 +89,11 @@ color: #dcd7c9;
 }
 
 /* contact page */
-.contactPageRight {
-  align-self: center;
-}
-
 .contactMessage{
   line-height: 2.5;
   font-weight: bold;
   letter-spacing: 1.5px;
   margin-right: 130px;
-
 }
 
 label.form-label{
